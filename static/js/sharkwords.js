@@ -12,6 +12,10 @@ let numWrong = 0;
 //
 const createDivsForChars = (word) => {
   // Replace this with your code
+  for (const letter of word){
+    `<div class="letter-box ${letter}"></div>`;
+    $('#word-container').append(`<div class="letter-box ${letter}"></div>`);
+  };
 };
 
 
@@ -19,6 +23,10 @@ const createDivsForChars = (word) => {
 //
 const generateLetterButtons = () => {
   // Replace this with your code
+  for (const letter of ALPHABET){
+    `<button> ${letter} </button>`;
+    $('#letter-buttons').append(`<button> ${letter} </button>`);
+  };
 };
 
 
@@ -28,6 +36,10 @@ const generateLetterButtons = () => {
 //
 const disableLetterButton = (buttonEl) => {
   // Replace this with your code
+  const jQueryEl = $(buttonEl);
+  // $('.enableOnInput').prop('disabled', true);
+  // `${'buttonEl:disabled'}`
+  <button type="button" disabled>${buttonEl}</button>
 };
 
 
