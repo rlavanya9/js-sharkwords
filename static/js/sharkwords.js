@@ -39,7 +39,9 @@ const disableLetterButton = (buttonEl) => {
   const jQueryEl = $(buttonEl);
   // $('.enableOnInput').prop('disabled', true);
   // `${'buttonEl:disabled'}`
-  <button type="button" disabled>${buttonEl}</button>
+  for (const el of jQueryEl){
+    $(el).toggleClass('hide');
+  }
 };
 
 
